@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Persona Food</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style_index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="left">
+          <img
+            class="header__logo"
+            src="img/logo.svg"
+            alt="logo"
+            width="144"
+            height="32"
+          />
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">Условия доставки</li>
+              <li class="header__item">О нас</li>
+              <li class="header__item">Контакты</li>
+              <li class="header__item">Программа лояльности</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right">
+          <div class="money">
+            <span class="deposit">Депозит: </span
+            ><span class="blue"><output id="cost">6000</output> ₽</span>
+          </div>
+          <button class="btn">
+            <span class="btn__text">Личный кабинет</span>
+          </button>
+        </div>
+      </header>
+    </div>
+    <nav class="nav">
+      <div class="line">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Программы питания</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Ресторан доставки</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">К случаю</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Корпоративное питание</a>
+          </li>
+        </ul>
+        <a href="#" class="basket-btn">
+          <img
+            class="basket-btn__logo"
+            src="img/ShoppingCartSimple.svg"
+            alt="shopping cart"
+            width="24"
+            height="24"
+          />
+          <span class="basket-btn__text">Корзина</span>
+          <div class="basket-btn__line"></div>
+          <div class="back">
+            <output class="basket-btn__count" id="basket-count">5</output>
+          </div>
+        </a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/img1.png" alt="photo" width="1120" height="480" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img1.png" alt="photo" width="1120" height="480" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img1.png" alt="photo" width="1120" height="480" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img1.png" alt="photo" width="1120" height="480" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img1.png" alt="photo" width="1120" height="480" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev">
+          <img src="img/arrow.svg" width="9" height="16" />
+        </div>
+        <div class="swiper-button-next">
+          <img src="img/arrow.svg" width="9" height="16" />
+        </div>
+      </div>
+      <div class="programms">
+        <p class="programms__title">Программы питания</p>
+        <div class="programms__list">
+          <div class="programms__item">
+            <img
+              src="img/clock.svg"
+              alt="clock-ico"
+              class="programms__item__logo"
+              width="57"
+              height="56"
+            />
+            <p class="programms__item__text">
+              Доставляем дневной рацион каждый вечер
+            </p>
+          </div>
+          <div class="programms__item">
+            <img
+              src="img/mask.svg"
+              alt="clock-ico"
+              class="programms__item__logo"
+              width="57"
+              height="56"
+            />
+            <p class="programms__item__text">
+              Современное и безопасное производство
+            </p>
+          </div>
+          <div class="programms__item">
+            <img
+              src="img/arrows.svg"
+              alt="clock-ico"
+              class="programms__item__logo"
+              width="57"
+              height="56"
+            />
+            <p class="programms__item__text">
+              Новое блюдо каждый день в рамках месяца
+            </p>
+          </div>
+          <div class="programms__item">
+            <img
+              src="img/leaf.svg"
+              alt="clock-ico"
+              class="programms__item__logo"
+              width="57"
+              height="56"
+            />
+            <p class="programms__item__text">
+              Только свежие и натуральные ингридиенты
+            </p>
+          </div>
+          <div class="programms__item" style="height: 184px">
+            <img
+              src="img/human.svg"
+              alt="clock-ico"
+              class="programms__item__logo"
+              width="57"
+              height="56"
+            />
+            <p class="programms__item__text">
+              Учтем пищевые аллергии и индивидуальные непереносимости
+            </p>
+          </div>
+          <div class="programms__item" style="height: 184px">
+            <img
+              src="img/snowflake.svg"
+              alt="clock-ico"
+              class="programms__item__logo"
+              width="57"
+              height="56"
+            />
+            <p class="programms__item__text">
+              Заморозим программу если захочется от нее отдохнуть
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
