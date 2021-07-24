@@ -2,7 +2,7 @@
   font-family: "Gilroy-Black";
   font-display: swap;
   src: url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -10,15 +10,15 @@
   font-family: "Gilroy-BlackItalic";
   font-display: swap;
   src: url("../fonts/Gilroy-BlackItalic.woff") format("woff"), url("../fonts/Gilroy-BlackItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 900;
+  font-style: italic;
 }
 
 @font-face {
   font-family: "Gilroy-Bold";
   font-display: swap;
   src: url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -26,39 +26,39 @@
   font-family: "Gilroy-BoldItalic";
   font-display: swap;
   src: url("../fonts/Gilroy-BoldItalic.woff") format("woff"), url("../fonts/Gilroy-BoldItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 700;
+  font-style: italic;
 }
 
 @font-face {
   font-family: "Gilroy-ExtraboldItalic";
   font-display: swap;
   src: url("../fonts/Gilroy-ExtraboldItalic.woff") format("woff"), url("../fonts/Gilroy-ExtraboldItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 800;
+  font-style: italic;
 }
 
 @font-face {
   font-family: "Gilroy-Extrabold";
   font-display: swap;
   src: url("../fonts/Gilroy-Extrabold.woff") format("woff"), url("../fonts/Gilroy-Extrabold.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 800;
+  font-style: italic;
 }
 
 @font-face {
   font-family: "Gilroy-HeavyItalic";
   font-display: swap;
   src: url("../fonts/Gilroy-HeavyItalic.woff") format("woff"), url("../fonts/Gilroy-HeavyItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 1000;
+  font-style: italic;
 }
 
 @font-face {
   font-family: "Gilroy-Light";
   font-display: swap;
   src: url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -66,7 +66,7 @@
   font-family: "Gilroy-Heavy";
   font-display: swap;
   src: url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 1000;
   font-style: normal;
 }
 
@@ -74,15 +74,15 @@
   font-family: "Gilroy-LightItalic";
   font-display: swap;
   src: url("../fonts/Gilroy-LightItalic.woff") format("woff"), url("../fonts/Gilroy-LightItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 300;
+  font-style: italic;
 }
 
 @font-face {
   font-family: "Gilroy-Medium";
   font-display: swap;
   src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -90,8 +90,8 @@
   font-family: "Gilroy-MediumItalic";
   font-display: swap;
   src: url("../fonts/Gilroy-MediumItalic.woff") format("woff"), url("../fonts/Gilroy-MediumItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 500;
+  font-style: italic;
 }
 
 @font-face {
@@ -107,14 +107,14 @@
   font-display: swap;
   src: url("../fonts/Gilroy-RegularItalic.woff") format("woff"), url("../fonts/Gilroy-RegularItalic.woff2") format("woff2");
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
 }
 
 @font-face {
   font-family: "Gilroy-Semibold";
   font-display: swap;
   src: url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -122,15 +122,15 @@
   font-family: "Gilroy-SemiboldItalic";
   font-display: swap;
   src: url("../fonts/Gilroy-SemiboldItalic.woff") format("woff"), url("../fonts/Gilroy-SemiboldItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 600;
+  font-style: italic;
 }
 
 @font-face {
   font-family: "Gilroy-Thin";
   font-display: swap;
   src: url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -138,15 +138,15 @@
   font-family: "Gilroy-ThinItalic";
   font-display: swap;
   src: url("../fonts/Gilroy-ThinItalic.woff") format("woff"), url("../fonts/Gilroy-ThinItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 100;
+  font-style: italic;
 }
 
 @font-face {
   font-family: "Gilroy-UltraLight";
   font-display: swap;
   src: url("../fonts/Gilroy-UltraLight.woff") format("woff"), url("../fonts/Gilroy-UltraLight.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -154,17 +154,13 @@
   font-family: "Gilroy-UltraLightItalic";
   font-display: swap;
   src: url("../fonts/Gilroy-UltraLightItalic.woff") format("woff"), url("../fonts/Gilroy-UltraLightItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 200;
+  font-style: italic;
 }
 
 * {
   padding: 0;
   margin: 0;
-}
-
-body {
-  height: 2000px;
 }
 
 .container {
@@ -493,6 +489,10 @@ body {
   right: 32px;
 }
 
+.programms {
+  margin-bottom: 32px;
+}
+
 .programms__title {
   color: #000000;
   font-family: "Gilroy-Bold";
@@ -545,4 +545,405 @@ body {
   font-family: "Gilroy-Regular";
   font-size: 15px;
   line-height: 16px;
+}
+
+.popular {
+  margin-bottom: 77px;
+}
+
+.popular__title {
+  font-family: "Gilroy-Semibold";
+  font-size: 27px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.popular__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.popular__item {
+  width: 256px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 32px;
+}
+
+.popular__item.continue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #85af27;
+  border-radius: 16px;
+  width: 256px;
+  height: 440px;
+  margin-right: 0px;
+}
+
+.popular__item.continue span {
+  font-family: "Gilroy-Semibold";
+  font-size: 27px;
+  line-height: 32px;
+  color: #ffffff;
+  text-align: center;
+  width: 168px;
+}
+
+.popular__item__img {
+  width: 256px;
+  height: 256px;
+  border-radius: 15px;
+  margin-bottom: 8px;
+}
+
+.popular__item__title {
+  font-family: "Gilroy-Semibold";
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 8px;
+  margin-left: 16px;
+}
+
+.popular__item__desc {
+  color: #8d8d8d;
+  font-family: "Gilroy-Regular";
+  font-size: 15px;
+  line-height: 16px;
+  margin-bottom: 24px;
+  margin-left: 16px;
+}
+
+.popular__item__price {
+  color: #000000;
+  font-family: "Gilroy-Medium";
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+
+.popular__item__btn {
+  background: #f4ffdc;
+  border-radius: 16px;
+  margin-left: 16px;
+  width: 224px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  margin-bottom: 16px;
+}
+
+.popular__item__btn:active,
+.popular__item__btn:focus {
+  outline: none;
+}
+
+.popular__item__btn__text {
+  color: #85af27;
+  font-family: "Gilroy-Semibold";
+  font-size: 17px;
+  line-height: 24px;
+  width: 92px;
+}
+
+.restaurant {
+  margin-bottom: 48px;
+}
+
+.restaurant__title {
+  font-family: "Gilroy-Extrabold";
+  font-size: 32px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.restaurant__nav {
+  margin-bottom: 32px;
+}
+
+.restaurant__list {
+  list-style-type: none;
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurant__item {
+  font-family: "Gilroy-Semibold";
+  font-size: 15px;
+  margin-right: 24px;
+  line-height: 16px;
+  margin-right: 24px;
+}
+
+.restaurant__block {
+  margin-bottom: 32px;
+}
+
+.restaurant__block__title {
+  font-family: "Gilroy-Semibold";
+  font-size: 27px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.restaurant__block__grid {
+  display: grid;
+  grid-template: "item item item item" auto / auto;
+  grid-gap: 32px;
+}
+
+.restaurant__block__item {
+  width: 256px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurant__block__item__photo {
+  width: 100%;
+  height: 256px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 8px;
+}
+
+.restaurant__block__item__title {
+  font-family: "Gilroy-Semibold";
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.restaurant__block__item__desc {
+  width: 100%;
+  height: 24px;
+  color: #8d8d8d;
+  font-family: "Gilroy-Medium";
+  font-size: 15px;
+  line-height: 16px;
+  margin-bottom: 16px;
+}
+
+.restaurant__block__item__bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.restaurant__block__item__price {
+  color: #000000;
+  font-family: "Gilroy-Medium";
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.restaurant__block__item__btn {
+  width: 128px;
+  height: 48px;
+  background: #f4ffdc;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+
+.restaurant__block__item__btn:active,
+.restaurant__block__item__btn:focus {
+  outline: none;
+}
+
+.restaurant__block__item__btn__text {
+  color: #85af27;
+  font-family: "Gilroy-Semibold";
+  font-size: 17px;
+  line-height: 24px;
+  width: 96px;
+  height: 24px;
+}
+
+.footer {
+  width: 100%;
+  padding: 32px 0 48px 0;
+  display: grid;
+  grid-template: auto / 256px 256px 256px 256px;
+  grid-column-gap: 32px;
+}
+
+.footer__logo {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.footer__text {
+  font-family: "Gilroy-Medium";
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.footer__services__list,
+.footer__website__list {
+  list-style-type: none;
+}
+
+.footer__services__item,
+.footer__website__item {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__services__item.title,
+.footer__website__item.title {
+  color: #343434;
+  font-family: "Gilroy-Semibold";
+  font-size: 17px;
+  line-height: 24px;
+  height: 48px;
+}
+
+.footer__services__link,
+.footer__website__link {
+  color: #8d8d8d;
+  font-family: "Gilroy-Medium";
+  font-size: 15px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.footer__services__link:hover,
+.footer__website__link:hover {
+  text-decoration: underline;
+}
+
+.footer__services__link:active,
+.footer__website__link:active {
+  text-decoration: none;
+}
+
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__contacts__phone {
+  color: #85af27;
+  font-family: "Gilroy-Medium";
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  margin-top: 12px;
+  text-decoration: none;
+}
+
+.footer__contacts__phone:hover {
+  text-decoration: underline;
+}
+
+.footer__contacts__phone:active {
+  text-decoration: none;
+}
+
+.footer__contacts__geo {
+  color: #000000;
+  font-family: "Gilroy-Medium";
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.footer__contacts__work-time {
+  color: #8d8d8d;
+  font-family: "Gilroy-Medium";
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+
+.footer__contacts__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 32px;
+}
+
+.footer__contacts__social {
+  margin-right: 16px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
 }
