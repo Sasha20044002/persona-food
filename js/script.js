@@ -24,6 +24,10 @@ const sliderHeader = new Swiper("#slider", {
     prevEl: ".swiper-button-prev",
   },
   loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  }
 });
 
 $(document).ready(function () {
