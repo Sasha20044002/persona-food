@@ -102,11 +102,3 @@ window.onscroll = function () {
   }
 };
 
-console.log(
-  document.getElementById("header").offsetHeight +
-    document.getElementById("slider").offsetHeight +
-    document.getElementById("popular").offsetHeight +
-    document.getElementById("restaurantNav").offsetHeight +
-    document.getElementById("restaurantTitle").offsetHeight
-);
-
