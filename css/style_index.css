@@ -361,6 +361,7 @@ body {
   background: #ffffff;
   top: 0;
   left: 0;
+  z-index: 6;
 }
 
 .nav__list {
@@ -783,11 +784,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  overflow-x: auto;
+  width: 100%;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
 }
 
 .restaurant__nav.fixed {
@@ -799,9 +805,9 @@ body {
 .restaurant__item {
   font-family: "Gilroy-Semibold";
   font-size: 15px;
-  margin-right: 24px;
   line-height: 16px;
   margin-right: 24px;
+  scroll-snap-align: start;
 }
 
 .restaurant__item:hover {
@@ -1058,6 +1064,12 @@ body {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
 }
 
+@media (min-width: 1120px) {
+  .restaurant__nav {
+    width: 1120px;
+  }
+}
+
 @media (max-width: 1120px) {
   .nav {
     width: 98%;
@@ -1220,9 +1232,7 @@ body {
 
   .basket-btn {
     background: none;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    width: 24px;
     margin-right: 24px;
   }
 
@@ -1289,6 +1299,14 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  #navigation {
+    position: static;
+  }
+
+  #fixed {
+    position: static;
   }
 }
 
@@ -1363,5 +1381,16 @@ body {
 @media (max-width: 492px) {
   .restaurant__nav {
     height: 116px;
+  }
+}
+
+@media (max-width: 425px) {
+  .programms__list {
+    grid-template-columns: repeat(auto-fit, 128px);
+  }
+
+  .programms__item__text {
+    font-size: 13px;
+    line-height: 16px;
   }
 }

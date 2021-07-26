@@ -9,67 +9,70 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/style_index.css" />
+    <style id="style-1"></style>
+    <style id="style-2"></style>
   </head>
   <body id="body">
     <div class="container">
-  <header class="header" id="header">
-    <div class="up">
-      <div class="left">
-        <nav class="header__nav">
-          <div class="header__nav__flex">
-            <div class="header__nav__flex__jc">
+      <header class="header" id="header">
+  <div class="up">
+    <div class="left">
+      <nav class="header__nav">
+        <div class="header__nav__flex">
+          <div class="header__nav__flex__jc">
+            <img
+              class="header__logo"
+              src="img/logo.svg"
+              alt="logo"
+              width="144"
+              height="32"
+            />
+            <input type="checkbox" name="menu-mobile" id="menu-mobile" />
+            <label for="menu-mobile" class="open-mobile-menu label-menu">
               <img
-                class="header__logo"
-                src="img/logo.svg"
-                alt="logo"
-                width="144"
-                height="32"
+                src="./img/open-menu-mobile.svg"
+                alt="open-menu-ico"
+                width="24"
+                height="24"
               />
-              <input type="checkbox" name="menu-mobile" id="menu-mobile" />
-              <label for="menu-mobile" class="open-mobile-menu label-menu">
-                <img
-                  src="./img/open-menu-mobile.svg"
-                  alt="open-menu-ico"
-                  width="24"
-                  height="24"
-                />
-              </label>
-              <label for="menu-mobile" class="close-mobile-menu label-menu">
-                <img
-                  src="./img/close-menu-mibole.svg"
-                  alt="close-menu-ico"
-                  width="24"
-                  height="24"
-                />
-              </label>
-              <ul class="header__list">
-                <li class="header__item marginTop">
-                  <a href="#" class="header__link">Условия доставки</a>
-                </li>
-                <li class="header__item">
-                  <a href="#" class="header__link">О нас</a>
-                </li>
-                <li class="header__item">
-                  <a href="#" class="header__link">Контакты</a>
-                </li>
-                <li class="header__item">
-                  <a href="#" class="header__link">Программа лояльности</a>
-                </li>
-              </ul>
-            </div>
-            <div class="right hidden" id="right">
-              <div class="money">
-                <span class="deposit">Депозит: </span
-                ><span class="blue"><output id="cost">6000</output> ₽</span>
-              </div>
-              <button class="btn">
-                <span class="btn__text">Личный кабинет</span>
-              </button>
-            </div>
+            </label>
+            <label for="menu-mobile" class="close-mobile-menu label-menu">
+              <img
+                src="./img/close-menu-mibole.svg"
+                alt="close-menu-ico"
+                width="24"
+                height="24"
+              />
+            </label>
+            <ul class="header__list">
+              <li class="header__item marginTop">
+                <a href="#" class="header__link">Условия доставки</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">О нас</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Контакты</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Программа лояльности</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </div>
+          <div class="right hidden" id="right">
+            <div class="money">
+              <span class="deposit">Депозит: </span
+              ><span class="blue"><output id="cost">6000</output> ₽</span>
+            </div>
+            <button class="btn">
+              <span class="btn__text">Личный кабинет</span>
+            </button>
+          </div>
+        </div>
+      </nav>
     </div>
+  </div>
+  <div id="fixed">
     <nav class="nav" id="navigation">
       <ul class="nav__list hidden" id="navigation-list">
         <li class="nav__item">
@@ -92,230 +95,173 @@
         </div>
       </a>
     </nav>
-    <div class="grey-line"></div>
-  </header>
-</div>
+  </div>
+  <div class="grey-line"></div>
+</header>
 
-    <div class="container">
       <main class="main">
-        <div class="swiper-container" id="slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="img/img1.png" alt="photo" width="1120" height="480" />
+        <div id="height">
+          <div class="swiper-container" id="slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/img1.png" alt="photo" width="1120" height="480" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/img1.png" alt="photo" width="1120" height="480" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/img1.png" alt="photo" width="1120" height="480" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/img1.png" alt="photo" width="1120" height="480" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/img1.png" alt="photo" width="1120" height="480" />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img src="img/img1.png" alt="photo" width="1120" height="480" />
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev">
+              <img src="img/arrow.svg" width="9" height="16" />
             </div>
-            <div class="swiper-slide">
-              <img src="img/img1.png" alt="photo" width="1120" height="480" />
-            </div>
-            <div class="swiper-slide">
-              <img src="img/img1.png" alt="photo" width="1120" height="480" />
-            </div>
-            <div class="swiper-slide">
-              <img src="img/img1.png" alt="photo" width="1120" height="480" />
+            <div class="swiper-button-next">
+              <img src="img/arrow.svg" width="9" height="16" />
             </div>
           </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev">
-            <img src="img/arrow.svg" width="9" height="16" />
-          </div>
-          <div class="swiper-button-next">
-            <img src="img/arrow.svg" width="9" height="16" />
-          </div>
-        </div>
-        <div class="programms" id="programms">
-          <p class="programms__title">Программы питания</p>
-          <div class="programms__list">
-            <div class="programms__item">
-              <img
-                src="img/clock.svg"
-                alt="clock-ico"
-                class="programms__item__logo"
-                width="57"
-                height="56"
-              />
-              <p class="programms__item__text">
-                Доставляем дневной рацион каждый вечер
-              </p>
-            </div>
-            <div class="programms__item">
-              <img
-                src="img/mask.svg"
-                alt="clock-ico"
-                class="programms__item__logo"
-                width="57"
-                height="56"
-              />
-              <p class="programms__item__text">
-                Современное и безопасное производство
-              </p>
-            </div>
-            <div class="programms__item">
-              <img
-                src="img/arrows.svg"
-                alt="clock-ico"
-                class="programms__item__logo"
-                width="57"
-                height="56"
-              />
-              <p class="programms__item__text">
-                Новое блюдо каждый день в рамках месяца
-              </p>
-            </div>
-            <div class="programms__item">
-              <img
-                src="img/leaf.svg"
-                alt="clock-ico"
-                class="programms__item__logo"
-                width="57"
-                height="56"
-              />
-              <p class="programms__item__text">
-                Только свежие и натуральные ингридиенты
-              </p>
-            </div>
-            <div class="programms__item" style="height: 184px">
-              <img
-                src="img/human.svg"
-                alt="clock-ico"
-                class="programms__item__logo"
-                width="57"
-                height="56"
-              />
-              <p class="programms__item__text">
-                Учтем пищевые аллергии и индивидуальные непереносимости
-              </p>
-            </div>
-            <div class="programms__item" style="height: 184px">
-              <img
-                src="img/snowflake.svg"
-                alt="clock-ico"
-                class="programms__item__logo"
-                width="57"
-                height="56"
-              />
-              <p class="programms__item__text">
-                Заморозим программу если захочется от нее отдохнуть
-              </p>
+          <div class="programms" id="programms">
+            <p class="programms__title">Программы питания</p>
+            <div class="programms__list">
+              <div class="programms__item">
+                <img
+                  src="img/clock.svg"
+                  alt="clock-ico"
+                  class="programms__item__logo"
+                  width="57"
+                  height="56"
+                />
+                <p class="programms__item__text">
+                  Доставляем дневной рацион каждый вечер
+                </p>
+              </div>
+              <div class="programms__item">
+                <img
+                  src="img/mask.svg"
+                  alt="clock-ico"
+                  class="programms__item__logo"
+                  width="57"
+                  height="56"
+                />
+                <p class="programms__item__text">
+                  Современное и безопасное производство
+                </p>
+              </div>
+              <div class="programms__item">
+                <img
+                  src="img/arrows.svg"
+                  alt="clock-ico"
+                  class="programms__item__logo"
+                  width="57"
+                  height="56"
+                />
+                <p class="programms__item__text">
+                  Новое блюдо каждый день в рамках месяца
+                </p>
+              </div>
+              <div class="programms__item">
+                <img
+                  src="img/leaf.svg"
+                  alt="clock-ico"
+                  class="programms__item__logo"
+                  width="57"
+                  height="56"
+                />
+                <p class="programms__item__text">
+                  Только свежие и натуральные ингридиенты
+                </p>
+              </div>
+              <div class="programms__item" style="height: 184px">
+                <img
+                  src="img/human.svg"
+                  alt="clock-ico"
+                  class="programms__item__logo"
+                  width="57"
+                  height="56"
+                />
+                <p class="programms__item__text">
+                  Учтем пищевые аллергии и индивидуальные непереносимости
+                </p>
+              </div>
+              <div class="programms__item" style="height: 184px">
+                <img
+                  src="img/snowflake.svg"
+                  alt="clock-ico"
+                  class="programms__item__logo"
+                  width="57"
+                  height="56"
+                />
+                <p class="programms__item__text">
+                  Заморозим программу если захочется от нее отдохнуть
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="popular" id="popular">
-          <p class="popular__title">Популярные программы</p>
-          <!-- <div id="wrapper">
-            <div class="popular__list" id="popular-slider">
-              <div class="popular__item popular-slider__slide">
-                <img
-                  src="img/popularItem1.png"
-                  alt="image"
-                  class="popular__item__img"
-                  width="256"
-                  height="256"
-                />
-                <span class="popular__item__title">Программа питания</span>
-                <span class="popular__item__desc">Идеально для худеющих</span>
-                <span class="popular__item__price">
-                  от <output id="programm-cost">1 820</output> ₽ в день
-                </span>
-                <button class="popular__item__btn">
-                  <span class="popular__item__btn__text">Подробнее</span>
-                </button>
-              </div>
-              <div class="popular__item none">
-                <img
-                  src="img/popularItem2.png"
-                  alt="image"
-                  class="popular__item__img"
-                  width="256"
-                  height="256"
-                />
-                <span class="popular__item__title">Программа питания</span>
-                <span class="popular__item__desc">Идеально для худеющих</span>
-                <span class="popular__item__price">
-                  от <output id="programm-cost">1 820</output> ₽ в день
-                </span>
-                <button class="popular__item__btn">
-                  <span class="popular__item__btn__text">Подробнее</span>
-                </button>
-              </div>
-              <div class="popular__item none">
-                <img
-                  src="img/popularItem2.png"
-                  alt="image"
-                  class="popular__item__img"
-                  width="256"
-                  height="256"
-                />
-                <span class="popular__item__title">Программа питания</span>
-                <span class="popular__item__desc">Идеально для худеющих</span>
-                <span class="popular__item__price">
-                  от <output id="programm-cost">1 820</output> ₽ в день
-                </span>
-                <button class="popular__item__btn">
-                  <span class="popular__item__btn__text">Подробнее</span>
-                </button>
-              </div>
-              <div class="popular__item popular-slider__slide continue">
-                <span>Еще 8+ программ под любую цель</span>
-              </div>
-            </div>
-          </div> -->
-          <div class="sliderRestaurant">
-            <div class="popular__list">
-              <div class="popular__item">
-                <img
-                  src="img/popularItem1.png"
-                  alt="image"
-                  class="popular__item__img"
-                  width="256"
-                  height="256"
-                />
-                <span class="popular__item__title">Программа питания</span>
-                <span class="popular__item__desc">Идеально для худеющих</span>
-                <span class="popular__item__price">
-                  от <output id="programm-cost">1 820</output> ₽ в день
-                </span>
-                <button class="popular__item__btn">
-                  <span class="popular__item__btn__text">Подробнее</span>
-                </button>
-              </div>
-              <div class="popular__item none">
-                <img
-                  src="img/popularItem1.png"
-                  alt="image"
-                  class="popular__item__img"
-                  width="256"
-                  height="256"
-                />
-                <span class="popular__item__title">Программа питания</span>
-                <span class="popular__item__desc">Идеально для худеющих</span>
-                <span class="popular__item__price">
-                  от <output id="programm-cost">1 820</output> ₽ в день
-                </span>
-                <button class="popular__item__btn">
-                  <span class="popular__item__btn__text">Подробнее</span>
-                </button>
-              </div>
-              <div class="popular__item none">
-                <img
-                  src="img/popularItem1.png"
-                  alt="image"
-                  class="popular__item__img"
-                  width="256"
-                  height="256"
-                />
-                <span class="popular__item__title">Программа питания</span>
-                <span class="popular__item__desc">Идеально для худеющих</span>
-                <span class="popular__item__price">
-                  от <output id="programm-cost">1 820</output> ₽ в день
-                </span>
-                <button class="popular__item__btn">
-                  <span class="popular__item__btn__text">Подробнее</span>
-                </button>
-              </div>
-              <div class="popular__item continue">
-                <span>Еще 8+ программ под любую цель</span>
+          <div class="popular" id="popular">
+            <p class="popular__title">Популярные программы</p>
+            <div class="sliderRestaurant" style="width: 100%; margin: 0 auto">
+              <div class="popular__list">
+                <div class="popular__item">
+                  <img
+                    src="img/popularItem1.png"
+                    alt="image"
+                    class="popular__item__img"
+                    width="256"
+                    height="256"
+                  />
+                  <span class="popular__item__title">Программа питания</span>
+                  <span class="popular__item__desc">Идеально для худеющих</span>
+                  <span class="popular__item__price">
+                    от <output id="programm-cost">1 820</output> ₽ в день
+                  </span>
+                  <button class="popular__item__btn">
+                    <span class="popular__item__btn__text">Подробнее</span>
+                  </button>
+                </div>
+                <div class="popular__item none">
+                  <img
+                    src="img/popularItem1.png"
+                    alt="image"
+                    class="popular__item__img"
+                    width="256"
+                    height="256"
+                  />
+                  <span class="popular__item__title">Программа питания</span>
+                  <span class="popular__item__desc">Идеально для худеющих</span>
+                  <span class="popular__item__price">
+                    от <output id="programm-cost">1 820</output> ₽ в день
+                  </span>
+                  <button class="popular__item__btn">
+                    <span class="popular__item__btn__text">Подробнее</span>
+                  </button>
+                </div>
+                <div class="popular__item none">
+                  <img
+                    src="img/popularItem1.png"
+                    alt="image"
+                    class="popular__item__img"
+                    width="256"
+                    height="256"
+                  />
+                  <span class="popular__item__title">Программа питания</span>
+                  <span class="popular__item__desc">Идеально для худеющих</span>
+                  <span class="popular__item__price">
+                    от <output id="programm-cost">1 820</output> ₽ в день
+                  </span>
+                  <button class="popular__item__btn">
+                    <span class="popular__item__btn__text">Подробнее</span>
+                  </button>
+                </div>
+                <div class="popular__item continue">
+                  <span>Еще 8+ программ под любую цель</span>
+                </div>
               </div>
             </div>
           </div>
@@ -324,57 +270,65 @@
           <p class="restaurant__title" id="restaurantTitle">
             Ресторан доставки
           </p>
-          <nav class="restaurant__nav" id="restaurantNav">
-            <input type="radio" name="restaurant" id="all" checked />
-            <input type="radio" name="restaurant" id="garnish" />
-            <input type="radio" name="restaurant" id="hot-dishes" />
-            <input type="radio" name="restaurant" id="hot-snacks" />
-            <input type="radio" name="restaurant" id="desserts" />
-            <input type="radio" name="restaurant" id="pastes" />
-            <input type="radio" name="restaurant" id="pins" />
-            <input type="radio" name="restaurant" id="salads" />
-            <input type="radio" name="restaurant" id="soups" />
-            <input type="radio" name="restaurant" id="cold-dishes" />
-            <label class="restaurant__item" for="all" data-filter="all"
-              >Все</label
-            >
-            <label class="restaurant__item" for="garnish" data-filter="garnish"
-              >Гарнир</label
-            >
-            <label
-              class="restaurant__item"
-              for="hot-dishes"
-              data-filter="hot-dishes"
-              >Горячие блюда</label
-            >
-            <label
-              class="restaurant__item"
-              for="hot-snacks"
-              data-filter="hot-snacks"
-              >Горячие закуски</label
-            >
-            <label class="restaurant__item" for="dessers" data-filter="desserts"
-              >Десерты</label
-            >
-            <label class="restaurant__item" for="pastes" data-filter="pastes"
-              >Пасты</label
-            >
-            <label class="restaurant__item" for="pins" data-filter="pins"
-              >Пинсы</label
-            >
-            <label class="restaurant__item" for="salads" data-filter="salads"
-              >Салаты</label
-            >
-            <label class="restaurant__item" for="soups" data-filter="soups"
-              >Супы</label
-            >
-            <label
-              class="restaurant__item"
-              for="cold-dishes"
-              data-filter="cold-dishes"
-              >Холодные блюда</label
-            >
-          </nav>
+          <div id="fixed-2">
+            <nav class="restaurant__nav" id="restaurantNav">
+              <input type="radio" name="restaurant" id="all" checked />
+              <input type="radio" name="restaurant" id="garnish" />
+              <input type="radio" name="restaurant" id="hot-dishes" />
+              <input type="radio" name="restaurant" id="hot-snacks" />
+              <input type="radio" name="restaurant" id="desserts" />
+              <input type="radio" name="restaurant" id="pastes" />
+              <input type="radio" name="restaurant" id="pins" />
+              <input type="radio" name="restaurant" id="salads" />
+              <input type="radio" name="restaurant" id="soups" />
+              <input type="radio" name="restaurant" id="cold-dishes" />
+              <label class="restaurant__item" for="all" data-filter="all"
+                >Все</label
+              >
+              <label
+                class="restaurant__item"
+                for="garnish"
+                data-filter="garnish"
+                >Гарнир</label
+              >
+              <label
+                class="restaurant__item"
+                for="hot-dishes"
+                data-filter="hot-dishes"
+                >Горячие блюда</label
+              >
+              <label
+                class="restaurant__item"
+                for="hot-snacks"
+                data-filter="hot-snacks"
+                >Горячие закуски</label
+              >
+              <label
+                class="restaurant__item"
+                for="dessers"
+                data-filter="desserts"
+                >Десерты</label
+              >
+              <label class="restaurant__item" for="pastes" data-filter="pastes"
+                >Пасты</label
+              >
+              <label class="restaurant__item" for="pins" data-filter="pins"
+                >Пинсы</label
+              >
+              <label class="restaurant__item" for="salads" data-filter="salads"
+                >Салаты</label
+              >
+              <label class="restaurant__item" for="soups" data-filter="soups"
+                >Супы</label
+              >
+              <label
+                class="restaurant__item"
+                for="cold-dishes"
+                data-filter="cold-dishes"
+                >Холодные блюда</label
+              >
+            </nav>
+          </div>
           <div class="restaurant__list">
             <div class="restaurant__block garnish">
               <p class="restaurant__block__title">Гарнир</p>
