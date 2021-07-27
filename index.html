@@ -10,2471 +10,301 @@
     />
     <link rel="stylesheet" href="css/style_index.css" />
     <style id="style-1"></style>
-    <style id="style-2"></style>
   </head>
   <body id="body">
-    <div class="container">
-      <header class="header" id="header">
-  <div class="up">
-    <div class="left">
+    <div class="header" id="header">
+      <label for="mobile-menu" class="header__open-menu">
+        <img
+          src="./img/open-menu-mobile.svg"
+          alt="open-menu-mobile-ico"
+          width="24"
+          height="24"
+        />
+      </label>
+      <img src="./img/logo.svg" alt="logo-mobile" class="header__logo-mobile" />
+      <input type="checkbox" name="mobile-menu" id="mobile-menu" />
       <nav class="header__nav">
-        <div class="header__nav__flex">
-          <div class="header__nav__flex__jc">
-            <img
-              class="header__logo"
-              src="img/logo.svg"
-              alt="logo"
-              width="144"
-              height="32"
-            />
-            <input type="checkbox" name="menu-mobile" id="menu-mobile" />
-            <label for="menu-mobile" class="open-mobile-menu label-menu">
-              <img
-                src="./img/open-menu-mobile.svg"
-                alt="open-menu-ico"
-                width="24"
-                height="24"
-              />
-            </label>
-            <label for="menu-mobile" class="close-mobile-menu label-menu">
-              <img
-                src="./img/close-menu-mibole.svg"
-                alt="close-menu-ico"
-                width="24"
-                height="24"
-              />
-            </label>
-            <ul class="header__list">
-              <li class="header__item marginTop">
-                <a href="#" class="header__link">Условия доставки</a>
-              </li>
-              <li class="header__item">
-                <a href="#" class="header__link">О нас</a>
-              </li>
-              <li class="header__item">
-                <a href="#" class="header__link">Контакты</a>
-              </li>
-              <li class="header__item">
-                <a href="#" class="header__link">Программа лояльности</a>
-              </li>
-            </ul>
+        <label for="mobile-menu" class="header__close-menu">
+          <img
+            src="./img/close-menu-mibole.svg"
+            alt="open-menu-mobile-ico"
+            width="24"
+            height="24"
+          />
+        </label>
+        <ul class="header__list">
+          <img
+            src="./img/logo.svg"
+            alt="logo"
+            width="144"
+            height="32"
+            class="header__logo"
+          />
+          <div class="header__grid" id="header__grid">
+            <li class="header__item">
+              <a href="#" class="header__link">Условия&nbsp;доставки</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">О&nbsp;нас</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Контакты</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Программа&nbsp;лояльности</a>
+            </li>
           </div>
-          <div class="right hidden" id="right">
-            <div class="money">
-              <span class="deposit">Депозит: </span
-              ><span class="blue"><output id="cost">6000</output> ₽</span>
+          <div class="money" id="money">
+            <div class="money__deposit">
+              Депозит:&nbsp;<output class="money__deposit__price"
+                >6000&nbsp;₽</output
+              >
             </div>
-            <button class="btn">
-              <span class="btn__text">Личный кабинет</span>
+            <button class="money__btn">
+              <span class="money__btn__text">Личный кабинет</span>
             </button>
           </div>
-        </div>
+          <div class="line"></div>
+        </ul>
+        <ul class="header__nav-2">
+          <div class="header__nav-2__flex">
+            <li class="header__nav-2__item">
+              <a href="#" class="header__nav-2__link">Программы&nbsp;питания</a>
+            </li>
+            <li class="header__nav-2__item">
+              <a href="#" class="header__nav-2__link">Ресторан&nbsp;доставки</a>
+            </li>
+            <li class="header__nav-2__item">
+              <a href="#" class="header__nav-2__link">К&nbsp;случаю</a>
+            </li>
+            <li class="header__nav-2__item">
+              <a href="#" class="header__nav-2__link"
+                >Корпоративное&nbsp;питание</a
+              >
+            </li>
+          </div>
+          <a href="#" class="header__nav-2__btn">
+            <div class="header__nav-2__btn__logo"></div>
+            <span class="header__nav-2__btn__text">Корзина</span>
+            <div class="header__nav-2__btn__line"></div>
+            <div class="header__nav-2__btn__count">5</div>
+          </a>
+        </ul>
       </nav>
     </div>
-  </div>
-  <div id="fixed">
-    <nav class="nav" id="navigation">
-      <ul class="nav__list hidden" id="navigation-list">
-        <li class="nav__item">
-          <a href="#" class="nav__link">Программы питания</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Ресторан доставки</a>
-        </li>
-        <li class="nav__item"><a href="#" class="nav__link">К случаю</a></li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Корпоративное питание</a>
-        </li>
-      </ul>
-      <a href="#" class="basket-btn">
-        <div class="basket-btn__logo"></div>
-        <span class="basket-btn__text">Корзина</span>
-        <div class="basket-btn__line"></div>
-        <div class="back">
-          <output class="basket-btn__count" id="basket-count">5</output>
+    <div class="swiper-container" id="slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/img1.png" alt="photo" width="1120" height="480" />
         </div>
-      </a>
-    </nav>
-  </div>
-  <div class="grey-line"></div>
-</header>
-
+        <div class="swiper-slide">
+          <img src="img/img1.png" alt="photo" width="1120" height="480" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/img1.png" alt="photo" width="1120" height="480" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/img1.png" alt="photo" width="1120" height="480" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/img1.png" alt="photo" width="1120" height="480" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev">
+        <img src="img/arrow.svg" width="9" height="16" />
+      </div>
+      <div class="swiper-button-next">
+        <img src="img/arrow.svg" width="9" height="16" />
+      </div>
+    </div>
+    <div class="container">
       <main class="main">
-        <div id="height">
-          <div class="swiper-container" id="slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="img/img1.png" alt="photo" width="1120" height="480" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/img1.png" alt="photo" width="1120" height="480" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/img1.png" alt="photo" width="1120" height="480" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/img1.png" alt="photo" width="1120" height="480" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/img1.png" alt="photo" width="1120" height="480" />
-              </div>
+        <div class="programms" id="programms">
+          <p class="programms__title">Программы питания</p>
+          <div class="programms__list">
+            <div class="programms__item">
+              <img
+                src="./img/clock.svg"
+                alt="ico"
+                class="programms__item__logo"
+                width="56"
+                height="56"
+              />
+              <p class="programms__item__text">
+                Доставляем дневной рацион каждый вечер
+              </p>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev">
-              <img src="img/arrow.svg" width="9" height="16" />
+            <div class="programms__item">
+              <img
+                src="./img/mask.svg"
+                alt="ico"
+                class="programms__item__logo"
+                width="56"
+                height="56"
+              />
+              <p class="programms__item__text">
+                Современное и безопасное производство
+              </p>
             </div>
-            <div class="swiper-button-next">
-              <img src="img/arrow.svg" width="9" height="16" />
+            <div class="programms__item">
+              <img
+                src="./img/arrows.svg"
+                alt="ico"
+                class="programms__item__logo"
+                width="56"
+                height="56"
+              />
+              <p class="programms__item__text">
+                Новое блюдо каждый день в рамках месяца
+              </p>
             </div>
-          </div>
-          <div class="programms" id="programms">
-            <p class="programms__title">Программы питания</p>
-            <div class="programms__list">
-              <div class="programms__item">
-                <img
-                  src="img/clock.svg"
-                  alt="clock-ico"
-                  class="programms__item__logo"
-                  width="57"
-                  height="56"
-                />
-                <p class="programms__item__text">
-                  Доставляем дневной рацион каждый вечер
-                </p>
-              </div>
-              <div class="programms__item">
-                <img
-                  src="img/mask.svg"
-                  alt="clock-ico"
-                  class="programms__item__logo"
-                  width="57"
-                  height="56"
-                />
-                <p class="programms__item__text">
-                  Современное и безопасное производство
-                </p>
-              </div>
-              <div class="programms__item">
-                <img
-                  src="img/arrows.svg"
-                  alt="clock-ico"
-                  class="programms__item__logo"
-                  width="57"
-                  height="56"
-                />
-                <p class="programms__item__text">
-                  Новое блюдо каждый день в рамках месяца
-                </p>
-              </div>
-              <div class="programms__item">
-                <img
-                  src="img/leaf.svg"
-                  alt="clock-ico"
-                  class="programms__item__logo"
-                  width="57"
-                  height="56"
-                />
-                <p class="programms__item__text">
-                  Только свежие и натуральные ингридиенты
-                </p>
-              </div>
-              <div class="programms__item" style="height: 184px">
-                <img
-                  src="img/human.svg"
-                  alt="clock-ico"
-                  class="programms__item__logo"
-                  width="57"
-                  height="56"
-                />
-                <p class="programms__item__text">
-                  Учтем пищевые аллергии и индивидуальные непереносимости
-                </p>
-              </div>
-              <div class="programms__item" style="height: 184px">
-                <img
-                  src="img/snowflake.svg"
-                  alt="clock-ico"
-                  class="programms__item__logo"
-                  width="57"
-                  height="56"
-                />
-                <p class="programms__item__text">
-                  Заморозим программу если захочется от нее отдохнуть
-                </p>
-              </div>
+            <div class="programms__item">
+              <img
+                src="./img/leaf.svg"
+                alt="ico"
+                class="programms__item__logo"
+                width="56"
+                height="56"
+              />
+              <p class="programms__item__text">
+                Только свежие и натуральные ингридиенты
+              </p>
+            </div>
+            <div class="programms__item">
+              <img
+                src="./img/human.svg"
+                alt="ico"
+                class="programms__item__logo"
+                width="56"
+                height="56"
+              />
+              <p class="programms__item__text">
+                Учтем пищевые аллергии и индивидуальные непереносимости
+              </p>
+            </div>
+            <div class="programms__item">
+              <img
+                src="./img/snowflake.svg"
+                alt="ico"
+                class="programms__item__logo"
+                width="56"
+                height="56"
+              />
+              <p class="programms__item__text">
+                Заморозим программу если захочется от нее отдохнуть
+              </p>
             </div>
           </div>
-          <div class="popular" id="popular">
-            <p class="popular__title">Популярные программы</p>
-            <div class="sliderRestaurant" style="width: 100%; margin: 0 auto">
-              <div class="popular__list">
-                <div class="popular__item">
-                  <img
-                    src="img/popularItem1.png"
-                    alt="image"
-                    class="popular__item__img"
-                    width="256"
-                    height="256"
-                  />
-                  <span class="popular__item__title">Программа питания</span>
-                  <span class="popular__item__desc">Идеально для худеющих</span>
-                  <span class="popular__item__price">
-                    от <output id="programm-cost">1 820</output> ₽ в день
-                  </span>
-                  <button class="popular__item__btn">
-                    <span class="popular__item__btn__text">Подробнее</span>
-                  </button>
-                </div>
-                <div class="popular__item none">
-                  <img
-                    src="img/popularItem1.png"
-                    alt="image"
-                    class="popular__item__img"
-                    width="256"
-                    height="256"
-                  />
-                  <span class="popular__item__title">Программа питания</span>
-                  <span class="popular__item__desc">Идеально для худеющих</span>
-                  <span class="popular__item__price">
-                    от <output id="programm-cost">1 820</output> ₽ в день
-                  </span>
-                  <button class="popular__item__btn">
-                    <span class="popular__item__btn__text">Подробнее</span>
-                  </button>
-                </div>
-                <div class="popular__item none">
-                  <img
-                    src="img/popularItem1.png"
-                    alt="image"
-                    class="popular__item__img"
-                    width="256"
-                    height="256"
-                  />
-                  <span class="popular__item__title">Программа питания</span>
-                  <span class="popular__item__desc">Идеально для худеющих</span>
-                  <span class="popular__item__price">
-                    от <output id="programm-cost">1 820</output> ₽ в день
-                  </span>
-                  <button class="popular__item__btn">
-                    <span class="popular__item__btn__text">Подробнее</span>
-                  </button>
-                </div>
-                <div class="popular__item continue">
-                  <span>Еще 8+ программ под любую цель</span>
-                </div>
-              </div>
+        </div>
+        <div class="popular" id="popular">
+          <p class="popular__title">Популярные программы</p>
+          <div class="popular__list">
+            <div class="popular__item">
+              <img
+                src="./img/popularItem1.png"
+                alt="image"
+                width="256"
+                height="256"
+                class="popular__item__logo"
+              />
+              <span class="popular__item__title">Программа&nbsp;питания</span>
+              <span class="popular__item__desc">Идеально для худеющих</span>
+              <span class="popular__item__price">от 1820 ₽ в день</span>
+              <button class="popular__item__btn">
+                <span>Подробнее</span>
+              </button>
+            </div>
+            <div class="popular__item">
+              <img
+                src="./img/popularItem1.png"
+                alt="image"
+                width="256"
+                height="256"
+                class="popular__item__logo"
+              />
+              <span class="popular__item__title">Программа&nbsp;питания</span>
+              <span class="popular__item__desc">Идеально для худеющих</span>
+              <span class="popular__item__price">от 1820 ₽ в день</span>
+              <button class="popular__item__btn">
+                <span>Подробнее</span>
+              </button>
+            </div>
+            <div class="popular__item">
+              <img
+                src="./img/popularItem1.png"
+                alt="image"
+                width="256"
+                height="256"
+                class="popular__item__logo"
+              />
+              <span class="popular__item__title">Программа&nbsp;питания</span>
+              <span class="popular__item__desc">Идеально для худеющих</span>
+              <span class="popular__item__price">от 1820 ₽ в день</span>
+              <button class="popular__item__btn">
+                <span>Подробнее</span>
+              </button>
+            </div>
+            <div class="popular__item continue">
+              <span>Еще 8+ программ под любую цель</span>
             </div>
           </div>
         </div>
         <div class="restaurant" id="restaurant">
-          <p class="restaurant__title" id="restaurantTitle">
-            Ресторан доставки
-          </p>
-          <div id="fixed-2">
-            <nav class="restaurant__nav" id="restaurantNav">
-              <input type="radio" name="restaurant" id="all" checked />
-              <input type="radio" name="restaurant" id="garnish" />
-              <input type="radio" name="restaurant" id="hot-dishes" />
-              <input type="radio" name="restaurant" id="hot-snacks" />
-              <input type="radio" name="restaurant" id="desserts" />
-              <input type="radio" name="restaurant" id="pastes" />
-              <input type="radio" name="restaurant" id="pins" />
-              <input type="radio" name="restaurant" id="salads" />
-              <input type="radio" name="restaurant" id="soups" />
-              <input type="radio" name="restaurant" id="cold-dishes" />
-              <label class="restaurant__item" for="all" data-filter="all"
-                >Все</label
-              >
-              <label
-                class="restaurant__item"
-                for="garnish"
-                data-filter="garnish"
-                >Гарнир</label
-              >
-              <label
-                class="restaurant__item"
-                for="hot-dishes"
-                data-filter="hot-dishes"
-                >Горячие блюда</label
-              >
-              <label
-                class="restaurant__item"
-                for="hot-snacks"
-                data-filter="hot-snacks"
-                >Горячие закуски</label
-              >
-              <label
-                class="restaurant__item"
-                for="desserts"
-                data-filter="desserts"
-                >Десерты</label
-              >
-              <label class="restaurant__item" for="pastes" data-filter="pastes"
-                >Пасты</label
-              >
-              <label class="restaurant__item" for="pins" data-filter="pins"
-                >Пинсы</label
-              >
-              <label class="restaurant__item" for="salads" data-filter="salads"
-                >Салаты</label
-              >
-              <label class="restaurant__item" for="soups" data-filter="soups"
-                >Супы</label
-              >
-              <label
-                class="restaurant__item"
-                for="cold-dishes"
-                data-filter="cold-dishes"
-                >Холодные блюда</label
-              >
-            </nav>
-          </div>
-          <div class="restaurant__list">
-            <div class="restaurant__block garnish">
-              <p class="restaurant__block__title">Гарнир</p>
-              <div class="restaurant__block__grid">
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="restaurant__block hot-dishes">
-              <p class="restaurant__block__title">Горячие блюда</p>
-              <div class="restaurant__block__grid">
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="restaurant__block hot-snacks">
-              <p class="restaurant__block__title">Горячие закуски</p>
-              <div class="restaurant__block__grid">
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="restaurant__block desserts">
-              <p class="restaurant__block__title">Десерты</p>
-              <div class="restaurant__block__grid">
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="restaurant__block pastes">
-              <p class="restaurant__block__title">Паста</p>
-              <div class="restaurant__block__grid">
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="restaurant__block pins">
-              <p class="restaurant__block__title">Пинсы</p>
-              <div class="restaurant__block__grid">
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="restaurant__block salads">
-              <p class="restaurant__block__title">Салаты</p>
-              <div class="restaurant__block__grid">
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="restaurant__block soups">
-              <p class="restaurant__block__title">Супы</p>
-              <div class="restaurant__block__grid">
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="restaurant__block cold-dishes">
-              <p class="restaurant__block__title">Холодные блюда</p>
-              <div class="restaurant__block__grid">
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output id="food-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <p class="restaurant__title">Ресторан доставки</p>
+          <nav class="restaurant__nav" id="restaurant__nav">
+            <input type="radio" name="restaurant" id="all" checked />
+            <input type="radio" name="restaurant" id="garnish" />
+            <input type="radio" name="restaurant" id="hot-dishes" />
+            <input type="radio" name="restaurant" id="hot-snacks" />
+            <input type="radio" name="restaurant" id="desserts" />
+            <input type="radio" name="restaurant" id="pastes" />
+            <input type="radio" name="restaurant" id="pins" />
+            <input type="radio" name="restaurant" id="salads" />
+            <input type="radio" name="restaurant" id="soups" />
+            <input type="radio" name="restaurant" id="cold-dishes" />
+            <label class="restaurant__item" for="all" data-filter="all"
+              >Все</label
+            >
+            <label class="restaurant__item" for="garnish" data-filter="garnish"
+              >Гарнир</label
+            >
+            <label
+              class="restaurant__item"
+              for="hot-dishes"
+              data-filter="hot-dishes"
+              >Горячие&nbsp;блюда</label
+            >
+            <label
+              class="restaurant__item"
+              for="hot-snacks"
+              data-filter="hot-snacks"
+              >Горячие&nbsp;закуски</label
+            >
+            <label class="restaurant__item" for="dessers" data-filter="desserts"
+              >Десерты</label
+            >
+            <label class="restaurant__item" for="pastes" data-filter="pastes"
+              >Пасты</label
+            >
+            <label class="restaurant__item" for="pins" data-filter="pins"
+              >Пинсы</label
+            >
+            <label class="restaurant__item" for="salads" data-filter="salads"
+              >Салаты</label
+            >
+            <label class="restaurant__item" for="soups" data-filter="soups"
+              >Супы</label
+            >
+            <label
+              class="restaurant__item"
+              for="cold-dishes"
+              data-filter="cold-dishes"
+              >Холодные&nbsp;блюда</label
+            >
+          </nav>
         </div>
       </main>
-      <footer class="footer">
-  <div class="footer__start">
-    <img
-      src="img/logo.svg"
-      alt="logo"
-      width="144"
-      height="32"
-      class="footer__logo"
-    />
-    <p class="footer__text">Persona Food &copy; 2021</p>
-  </div>
-  <div class="footer__services">
-    <ul class="footer__services__list">
-      <li class="footer__services__item title">Услуги</li>
-      <li class="footer__services__item">
-        <a href="#" class="footer__services__link">Программы питания</a>
-      </li>
-      <li class="footer__services__item">
-        <a href="#" class="footer__services__link">Ресторан доставки</a>
-      </li>
-      <li class="footer__services__item">
-        <a href="#" class="footer__services__link">Фушеры</a>
-      </li>
-    </ul>
-  </div>
-  <div class="footer__website">
-    <ul class="footer__website__list">
-      <li class="footer__website__item title">Сайт</li>
-      <li class="footer__website__item">
-        <a href="#" class="footer__website__link">Главная</a>
-      </li>
-      <li class="footer__website__item">
-        <a href="#" class="footer__website__link">Условия доставки</a>
-      </li>
-      <li class="footer__website__item">
-        <a href="#" class="footer__website__link">О нас</a>
-      </li>
-      <li class="footer__website__item">
-        <a href="#" class="footer__website__link">Контакты</a>
-      </li>
-      <li class="footer__website__item">
-        <a href="#" class="footer__website__link">Политика конфедициальности</a>
-      </li>
-      <li class="footer__website__item">
-        <a href="#" class="footer__website__link">Оферта</a>
-      </li>
-    </ul>
-  </div>
-  <div class="footer__contacts">
-    <a href="tel:+73472940904" class="footer__contacts__phone"
-      >+7 (347) 294-09-04</a
-    >
-    <span class="footer__contacts__geo">г. Уфа, ул. Пушкина, 45/2</span>
-    <span class="footer__contacts__work-time">Ежедневно с 10:00 до 22:00</span>
-    <div class="footer__contacts__bottom">
-      <a href="#" class="footer__contacts__social">
-        <img src="img/inst-ico.svg" alt="inst-ico" width="32" height="32" />
-      </a>
-      <a href="#" class="footer__contacts__social">
-        <img src="img/fb-ico.svg" alt="fb-ico" width="32" height="32" />
-      </a>
-      <a href="#" class="footer__contacts__social">
-        <img
-          src="img/telegram-ico.svg"
-          alt="telegram-ico"
-          width="32"
-          height="32"
-        />
-      </a>
-      <a href="#" class="footer__contacts__social">
-        <img
-          src="img/whatsapp-ico.svg"
-          alt="whatsapp-ico"
-          width="32"
-          height="32"
-        />
-      </a>
-    </div>
-  </div>
-</footer>
-
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
