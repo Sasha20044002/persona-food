@@ -10,41 +10,21 @@ const sliderHeader = new Swiper("#slider", {
 });
 
 $("#style-1").text(`
-  .header__nav-2.fixed{
-    width: 1120px;
-    padding: 0 ${($(window).width() - 1120) / 2}px;
-  }
+.back.fixed, back-2.fixed{
+  width: 1120px;
+  padding: 0 ${($(window).width() - 1120) / 2}px;
+}
 
-  @media (max-width: 1061px) {
-    .header #mobile-menu:checked ~ .header__nav {
-      height: ${$(window).height()}px;
-    }
-    }
+@media (max-width: 1061px) {
+  .header #mobile-menu:checked ~ .header__nav {
+    height: ${$(window).height()}px;
   }
-
-  @media (max-width: 1152px) {
-    .header, .container, .swiper-container {
-      width: ${$(window).width() - 32}px;
-      margin: 0 auto;
-    }
-  }
-
-  @media (max-width: 1120px) {
-    width: ${$(window).width() - 32}px;
-    padding: 0 16px;
-  }
-
-  @media (max-width: 1060px) {
-    .swiper-container {
-      width: 100%;
-      border-radius: 0;
-    }
-  }
+}
 `);
 
 $(window).resize(function () {
   $("#style-1").text(`
-  .header__nav-2.fixed{
+  .back.fixed, back-2.fixed{
     width: 1120px;
     padding: 0 ${($(window).width() - 1120) / 2}px;
   }
@@ -52,25 +32,6 @@ $(window).resize(function () {
   @media (max-width: 1061px) {
     .header #mobile-menu:checked ~ .header__nav {
       height: ${$(window).height()}px;
-    }
-  }
-
-  @media (max-width: 1152px) {
-    .header, .container, .swiper-container {
-      width: ${$(window).width() - 32}px;
-      margin: 0 auto;
-    }
-  }
-
-  // @media (max-width: 1120px) {
-  //   width: ${$(window).width() - 32}px;
-  //   padding: 0 16px;
-  // }
-
-  @media (max-width: 1060px) {
-    .swiper-container {
-      width: 100%;
-      border-radius: 0;
     }
   }
 `);
@@ -79,7 +40,7 @@ $(window).resize(function () {
 $(window).scroll(function () {
   $(window).resize(function () {
     $("#style-1").text(`
-    .header__nav-2.fixed{
+    .back.fixed, back-2.fixed{
       width: 1120px;
       padding: 0 ${($(window).width() - 1120) / 2}px;
     }
@@ -89,37 +50,100 @@ $(window).scroll(function () {
         height: ${$(window).height()}px;
       }
     }
-  
-    @media (max-width: 1152px) {
-      .header, .container, .swiper-container {
-        width: ${$(window).width() - 32}px;
-        margin: 0 auto;
-      }
-    }
-  
-    // @media (max-width: 1120px) {
-    //   width: ${$(window).width() - 32}px;
-    //   padding: 0 16px;
-    // }
-  
-    @media (max-width: 1060px) {
-      .swiper-container {
-        width: 100%;
-        border-radius: 0;
-      }
-    }
   `);
   });
 });
 
+if ($(window).scrollTop() >= 72) {
+  $(".back").addClass("fixed");
+} else {
+  $(".back").removeClass("fixed");
+}
+
 $(window).scroll(function () {
-  // console.log($(window).scrollTop());
   if ($(window).scrollTop() >= 72) {
-    $(".header__nav-2").addClass("fixed");
+    $(".back").addClass("fixed");
   } else {
-    $(".header__nav-2").removeClass("fixed");
+    $(".back").removeClass("fixed");
   }
 });
+
+$(window).resize(function () {
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= 72) {
+      $(".back").addClass("fixed");
+    } else {
+      $(".back").removeClass("fixed");
+    }
+  });
+});
+
+if (
+  $(window).scrollTop() >=
+  $(".header").height() +
+    $("#slider").height() +
+    $("#programms").height() +
+    $("#popular").height() +
+    $(".restaurant__title").height()
+) {
+  $(".back-2").addClass("fixed");
+} else {
+  $(".back-2").removeClass("fixed");
+}
+
+$(window).scroll(function () {
+  if (
+    $(window).scrollTop() >=
+    $(".header").height() +
+      $("#slider").height() +
+      $("#programms").height() +
+      $("#popular").height() +
+      $(".restaurant__title").height()
+  ) {
+    $(".back-2").addClass("fixed");
+  } else {
+    $(".back-2").removeClass("fixed");
+  }
+});
+
+$(window).resize(function () {
+  $(window).scroll(function () {
+    if (
+      $(window).scrollTop() >=
+      $(".header").height() +
+        $("#slider").height() +
+        $("#programms").height() +
+        $("#popular").height() +
+        $(".restaurant__title").height()
+    ) {
+      $(".back-2").addClass("fixed");
+    } else {
+      $(".back-2").removeClass("fixed");
+    }
+  });
+});
+
+for (
+  let i = 0;
+  i < document.getElementsByClassName("restaurant__item").length;
+  i++
+) {
+  const a = document.getElementsByClassName("restaurant__item")[i];
+  a.onclick = function () {
+    $("html, body").animate(
+      {
+        scrollTop:
+          $(".header").height() +
+          $("#slider").height() +
+          $("#programms").height() +
+          $("#popular").height() +
+          $(".restaurant__title").height() +
+          20,
+      },
+      500
+    );
+  };
+}
 
 $(document).ready(function () {
   $(".restaurant__item").click(function () {
